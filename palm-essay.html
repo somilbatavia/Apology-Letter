@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Palm Essay</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #f5f0e8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 48px 16px;
+    font-family: 'EB Garamond', Georgia, serif;
+  }
+
+  .paper {
+    background: #fdfaf4;
+    max-width: 680px;
+    width: 100%;
+    padding: 64px 72px;
+    box-shadow: 0 4px 40px rgba(0,0,0,0.12), 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #e8e0d0;
+    position: relative;
+  }
+
+  .paper::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 64px;
+    height: 100%;
+    width: 1px;
+    background: rgba(180, 100, 100, 0.15);
+  }
+
+  .stamp {
+    position: absolute;
+    top: 24px;
+    right: 28px;
+    border: 2px solid rgba(180,60,60,0.4);
+    color: rgba(180,60,60,0.5);
+    font-family: 'Playfair Display', serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    transform: rotate(8deg);
+    font-weight: 700;
+  }
+
+  .doc-ref {
+    font-size: 11px;
+    color: #999;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-family: 'EB Garamond', serif;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #1a1a1a;
+    margin-bottom: 6px;
+  }
+
+  .subtitle {
+    font-style: italic;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.85;
+    color: #2a2a2a;
+    margin-bottom: 18px;
+    text-align: justify;
+  }
+
+  p:first-of-type::first-letter {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    font-weight: 700;
+    float: left;
+    line-height: 0.8;
+    margin-right: 6px;
+    margin-top: 8px;
+    color: #1a1a1a;
+  }
+
+  .section-break {
+    text-align: center;
+    color: #ccc;
+    margin: 24px 0;
+    font-size: 18px;
+    letter-spacing: 8px;
+  }
+
+  blockquote {
+    border-left: 3px solid #c8a96e;
+    padding: 8px 20px;
+    margin: 24px 0;
+    font-style: italic;
+    color: #555;
+    font-size: 15px;
+    background: rgba(200, 169, 110, 0.05);
+  }
+
+  .footnotes {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    font-size: 12px;
+    color: #777;
+    font-style: italic;
+    line-height: 1.7;
+  }
+
+  .footnotes strong {
+    font-style: normal;
+    color: #555;
+  }
+
+  .appendix {
+    margin-top: 32px;
+    padding: 20px 24px;
+    background: rgba(200,169,110,0.07);
+    border: 1px solid rgba(200,169,110,0.25);
+  }
+
+  .appendix h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    color: #555;
+  }
+
+  .appendix ul {
+    padding-left: 18px;
+    font-size: 13.5px;
+    color: #555;
+    line-height: 2;
+  }
+
+  .closing {
+    margin-top: 32px;
+    font-size: 15px;
+    color: #444;
+  }
+
+  .closing .signature {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 22px;
+    margin-top: 12px;
+    color: #1a1a1a;
+  }
+
+  .word-count {
+    margin-top: 40px;
+    text-align: right;
+    font-size: 11px;
+    color: #bbb;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 600px) {
+    .paper { padding: 40px 28px; }
+    .paper::before { left: 24px; }
+  }
+</style>
+</head>
+<body>
+<div class="paper">
+  <div class="stamp">Submitted Under Duress</div>
+
+  <div class="doc-ref">Ref: PALM-001 · Submitted in partial fulfilment of Relationship Continuity Requirements</div>
+  <h1>From 'Palm' to Prison: How Tiny Corrections Escalate Relationship Conflict</h1>
+  <p class="subtitle">A Reflective Essay on Mansplaining, Escalation, and the Silent Letter That Destroyed an Evening<br>
+  <em>Author: Somil · Audience: One · Stakes: High</em></p>
+
+  <p>On that call, I made a mistake.</p>
+
+  <p>Not a big one. Not the kind that ends things. A small, avoidable, completely unnecessary one: I corrected how Viki said "palm."</p>
+
+  <p>The L is silent, I explained. With confidence. With detail.</p>
+
+  <p>Viki did not ask me to explain this.</p>
+
+  <p>Viki was just talking. And I interrupted to deliver a phonetics lesson she did not request, did not need, and did not appreciate.</p>
+
+  <p>That is mansplaining. Not the loud, dramatic kind. The quiet, well-meaning kind. The kind where you genuinely think you are helping. And that makes it worse.</p>
+
+  <div class="section-break">· · ·</div>
+
+  <p>Viki expressed disagreement. I elaborated. Viki expressed irritation. I clarified. Viki hung up.</p>
+
+  <p>I sat there, technically correct, completely alone.</p>
+
+  <p>The moment I should have stopped was the first moment. Every sentence after that was just damage.</p>
+
+  <p>Here is what I have learned: being right about a word is not the same as being right about what matters. Viki did not need a dictionary. Viki needed me to listen.</p>
+
+  <p>Going forward, if I feel the urge to correct something, I am going to stop, nod my head, and say yes.</p>
+
+  <p>I am sorry. Not for knowing about the L. For thinking that was something worth saying.</p>
+
+  <p><em>You matter more than a silent letter. You always will.</em></p>
+
+  <div class="section-break">· · ·</div>
+
+  <div class="closing">
+    Submitted with genuine remorse and moderate embarrassment,<br>
+    <div class="signature">Somil 🌴</div>
+    <em style="font-size:13px; color:#aaa;">(the 'L' in his name is, for what it's worth, fully pronounced)</em>
+  </div>
+
+  <div class="footnotes">
+    <strong>Footnote 1:</strong> The International Phonetic Association confirms /pɑːm/ has no lateral consonant. This footnote exists purely to demonstrate I have learned nothing about when to stop. I include it anyway as evidence of character.<br><br>
+    <strong>Footnote 2:</strong> Other silent-L words the author will henceforth keep to himself: calm, psalm, balm, folk, yolk, walk, talk, and "relationship advice."
+  </div>
+
+  <div class="appendix">
+    <h3>Appendix A: Lessons Learned</h3>
+    <ul>
+      <li>Unsolicited corrections are a form of conversational littering.</li>
+      <li>The phrase "actually, let me explain" should be treated as a red flag in one's own mouth.</li>
+      <li>Phonetic accuracy and emotional safety are not competing values. One of them is a value; the other is a pub quiz answer.</li>
+      <li>When she hangs up, the debate is over. You lost. The letter lost. Everyone lost.</li>
+      <li>Tea. Always offer tea.</li>
+    </ul>
+  </div>
+
+  <div class="word-count">~300 words (excl. footnotes & appendix) · Grade target: A · Kissie potential: High</div>
+</div>
+</body>
+</html>
